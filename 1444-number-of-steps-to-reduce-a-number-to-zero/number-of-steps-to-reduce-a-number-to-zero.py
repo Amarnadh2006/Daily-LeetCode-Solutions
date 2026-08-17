@@ -10,8 +10,7 @@ class Solution:
             else:
                 c+=2
                 num = num//2
-        c-=1
-        return c
+        return c-1
 
 
 

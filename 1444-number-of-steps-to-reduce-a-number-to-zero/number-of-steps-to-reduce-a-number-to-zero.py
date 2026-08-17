@@ -1,0 +1,18 @@
+class Solution:
+    def numberOfSteps(self, num: int) -> int:
+        c = 0
+        if(num==0):
+            return c
+        while(num > 0):
+            if(num%2==0):
+                c+=1
+                num/=2
+            else:
+                c+=2
+                num = num//2
+        c-=1
+        return c
+
+
+
+        

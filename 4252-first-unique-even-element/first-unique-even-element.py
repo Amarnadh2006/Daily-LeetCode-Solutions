@@ -1,0 +1,7 @@
+class Solution:
+    def firstUniqueEven(self, nums: list[int]) -> int:
+        for x in nums:
+            if x%2==0 and nums.count(x)==1:
+                return x
+        return -1
+        

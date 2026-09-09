@@ -1,8 +1,9 @@
 class Solution:
     def arrangeCoins(self, n: int) -> int:
         for x in range(n):
-            if ((x+1)*(x+2))/2 > n:
+            a = ((x+1)*(x+2))/2
+            if a > n:
                 return x
-            if ((x+1)*(x+2))/2 == n:
+            if a == n:
                 return x+1
         

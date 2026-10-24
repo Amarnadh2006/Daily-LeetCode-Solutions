@@ -3,7 +3,8 @@ class Solution:
         final = ""
         for x in range(num):
             if sum==0:
-                final+="0"
+                final+=(num-len(final))*"0"
+                break
             elif sum>=9:
                 sum-=9
                 final+="9"
